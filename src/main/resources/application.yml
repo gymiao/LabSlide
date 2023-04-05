@@ -1,0 +1,31 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.46.213.13:3306/article
+    username: root
+    password: "@Imgy1519"
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+
+
+
+oos:
+  endpoint: oss-cn-nanjing.aliyuncs.com
+  keyid: LTAI5tCtKBngWj3W8etfEMyh # 填写刚刚生成的AccessKey
+  keysecret: SBtjXgLLO95j5Ikx0otXgvXwNcLIwE  # 填写刚刚生成的Accesssecret
+  bucketname: labslidenew # bucket名称
+  filehost: slides    #bucket下文件夹的路径
+
+
+
+
